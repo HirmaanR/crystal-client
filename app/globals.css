@@ -4,3 +4,8 @@
   themes: light --default;
   /* themes: light --default, dark --prefersdark; */
 }
+
+
+:root {
+  --color-primary: #0157FF;
+}
