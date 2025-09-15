@@ -2,11 +2,12 @@ import Navbar from "../navbar/Navbar"
 
 function MainLayout({ children }) {
   return (
-    <>
-      <Navbar>
+    <div className="px-0 md:px-10">
+      <Navbar />
+      <div>
         {children}
-      </Navbar>
-    </>
+      </div>
+    </div>
   )
 }
 export default MainLayout

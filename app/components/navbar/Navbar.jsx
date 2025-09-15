@@ -1,6 +1,7 @@
+import { Button } from "../share/Button"
 function Navbar() {
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 mb-15 md:mb-30 ">
       <div className="navbar-start">
         <a className="btn btn-ghost text-xl">Crystal AI</a>
       </div>
@@ -14,7 +15,7 @@ function Navbar() {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn btn-primary capitalize rounded-full hidden lg:flex">try 7-days free trial</a>
+        <Button className="hidden lg:flex">try 7-days free trial</Button>
       </div>
       <div className="dropdown">
         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
