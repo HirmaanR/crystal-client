@@ -1,7 +1,7 @@
 import { Button } from "../share/Button"
 function Navbar() {
   return (
-    <div className="navbar bg-base-100 mb-15 md:mb-30 ">
+    <div className="navbar bg-base-100">
       <div className="navbar-start">
         <a className="btn btn-ghost text-xl">Crystal AI</a>
       </div>
