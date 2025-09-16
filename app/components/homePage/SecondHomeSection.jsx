@@ -11,7 +11,7 @@ import AITranslaterImage from '@/public/secoundSection/AITranslater.png'
 import AIWriterImage from '@/public/secoundSection/AIWriter.png'
 
 
-function SecoundHomeSection({ }) {
+function SecondHomeSection({ }) {
 
   const tabs = [
     { title: "AI Chat", iconName: "ri:chat-voice-ai-fill", content: <Image src={heroImage} alt="AI Chat" /> },
@@ -33,4 +33,4 @@ function SecoundHomeSection({ }) {
   )
 }
 
-export default SecoundHomeSection 
+export default SecondHomeSection 
