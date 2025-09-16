@@ -11,7 +11,11 @@ function DynamicTabs({ tabsArr }) {
             {item.iconName && <Icon icon={item.iconName} className="text-2xl" />}
             <span className="tab-title">{item.title}</span>
           </label>
-          <div className="tab-content bg-base-300 p-6 rounded-3xl mt-5">{item.content}</div>
+          <div className="tab-content bg-base-300 p-10 rounded-3xl mt-5">
+            <div className='flex flex-col justify-center items-center w-full'>
+              {item.content}
+            </div>
+          </div>
         </Fragment>
       ))}
     </div>
