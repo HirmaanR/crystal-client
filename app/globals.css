@@ -9,3 +9,7 @@
 :root {
   --color-primary: #0157FF;
 }
+
+.tab input[type="radio"]:checked+* {
+  color: var(--color-primary) !important;
+}
