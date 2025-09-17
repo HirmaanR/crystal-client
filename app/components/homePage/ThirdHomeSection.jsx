@@ -17,7 +17,7 @@ function ThirdHomeSection({ }) {
             <p className="font-light capitalize">
               Create your account and personalize your AI assistant in just a few clicks.</p>
           </div>
-          <figure className="h-90 w-full">
+          <figure className="h-90 w-full rotate-3">
             <Image src={StepOneImage} alt="cart step Image" className="shadow-lg shadow-primary rounded-3xl" width={300} />
           </figure>
         </div>
@@ -29,7 +29,7 @@ function ThirdHomeSection({ }) {
               Train your AI with FAQs, workflows, and custom responses, tweaking its tone and style to match your brand or preferences effortlessly.
             </p>
           </div>
-          <figure className="w-full h-90">
+          <figure className="w-full h-90 rotate-1">
             <Image src={StepTwoImage} alt="cart step Image" className="shadow-lg shadow-primary rounded-3xl" width={300} />
           </figure>
         </div>
