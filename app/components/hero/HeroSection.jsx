@@ -1,7 +1,7 @@
 import { Button } from "../share/Button"
 import Image from "next/image"
 import heroImage from "@/public/heroSection/heroImage.png"
-import IconicRating from "../share/ratings/IconicRating"
+import { IconicRating } from "../share/ratings/IconicRating"
 import ChromeWebStore from '@/public/icons/googleChromeWebStore.png'
 import ProductHunt from "@/public/icons/ProductHuntIcon.png"
 
