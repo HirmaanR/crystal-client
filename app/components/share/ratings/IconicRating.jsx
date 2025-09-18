@@ -4,6 +4,7 @@ const Stars = ({ starNumber }) => {
   const stars = [];
 
   for (let i = 1; i <= 5; i++) {
+    console.log(i)
     stars.push(
       <input
         key={i}
@@ -15,6 +16,7 @@ const Stars = ({ starNumber }) => {
       />
     );
   }
+
 
   return <div className="rating">{stars}</div>;
 };
@@ -45,4 +47,4 @@ function IconicRating({ ImageSrc, title, description, starNumber, imageAlt = "ra
 
   )
 }
-export default IconicRating
+export { IconicRating, Stars } 
