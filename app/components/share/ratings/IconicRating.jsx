@@ -1,22 +1,24 @@
 import Image from 'next/image'
+import { useId } from 'react';
 
 const Stars = ({ starNumber }) => {
+  const uniqueId = useId(); // React 18+ hook to generate a unique ID
+
   const stars = [];
 
   for (let i = 1; i <= 5; i++) {
-    console.log(i)
     stars.push(
       <input
         key={i}
         type="radio"
-        name={`rating-${i}`}
-        className={`mask mask-star-2 bg-orange-300`}
+        name={`rating-${uniqueId}`}  // unique name per component instance
+        className="mask mask-star-2 bg-orange-300"
         aria-label={`${i} star`}
         defaultChecked={i === starNumber}
+        readOnly
       />
     );
   }
-
 
   return <div className="rating">{stars}</div>;
 };

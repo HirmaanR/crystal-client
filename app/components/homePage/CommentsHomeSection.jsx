@@ -1,10 +1,11 @@
 import DynamicSection from "../share/Sections/DynamicSection"
 // import Image from "next/image"
-//
+
 import { IconicRating } from "../share/ratings/IconicRating"
 import ChromeWebStore from '@/public/icons/googleChromeWebStore.png'
 import ProductHunt from "@/public/icons/ProductHuntIcon.png"
 import { Stars } from "../share/ratings/IconicRating"
+import { Fragment } from 'react'
 
 
 function CommentCard({ name, message, avatarImage = "https://img.daisyui.com/images/profile/demo/yellingcat@192.webp", rateNumber }) {
@@ -20,7 +21,7 @@ function CommentCard({ name, message, avatarImage = "https://img.daisyui.com/ima
           <h2 className="card-title capitalize">{name}</h2>
         </div>
         <div>
-          <Stars starNumber={2} />
+          <Stars starNumber={rateNumber} />
         </div>
         <p className="font-light capitalize">{message}</p>
       </div>
@@ -32,7 +33,7 @@ function CommentsHomeSection() {
 
 
   const comments = [
-    { avatarImage: "", name: "Hianto Mateus", rate: 3, message: "The improvement in my productivity, I won't even comment on. The 5 stars are enough <3. Thank you for existing!" },
+    { avatarImage: "", name: "Hianto Mateus", rate: 5, message: "The improvement in my productivity, I won't even comment on. The 5 stars are enough <3. Thank you for existing!" },
     { avatarImage: "", name: "Sarah L.", rate: 5, message: "Incredible AI assistant! It has completely transformed the way we handle customer support—faster responses and happier clients!" },
     { avatarImage: "", name: "James M.", rate: 5, message: "The improvement in my productivity, I won't even comment on. The 5 stars are enough <3. Thank you for existing!" },
     { avatarImage: "", name: "Daniel R.", rate: 5, message: "The best AI chatbot I've used! It feels natural, adapts quickly, and integrates seamlessly with my platforms." },
@@ -49,7 +50,11 @@ function CommentsHomeSection() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 max-w-lg md:max-w-5xl mt-10">
           {comments.map((item, index) => {
-            return <CommentCard key={index} name={item.name} rateNumber={item.rate} message={item.message} />
+            return (
+              <Fragment key={index}>
+                <CommentCard name={item.name} rateNumber={item.rate} message={item.message} />
+              </Fragment>
+            )
           })}
         </div>
       </div>
