@@ -4,9 +4,9 @@ import { Icon } from '@iconify/react'
 
 function IconicCard({ title, desc, iconName }) {
   return (
-    <div className="card bg-base-100 w-96">
+    <div className="card bg-base-100 w-full">
       <figure className="">
-        <Icon icon={iconName} className="text-3xl text-primary bg-base-300 rounded-xl w-fit h-fit p-3" />
+        <Icon icon={iconName} className="text-2xl text-primary bg-base-300 rounded-xl w-fit h-fit p-3" />
       </figure>
       <div className="card-body items-center text-center">
         <h2 className="card-title capitalize">{title}</h2>
@@ -31,7 +31,7 @@ function FourHomeSection({ }) {
 
   return (
     <DynamicSection title={<p className="capitalize">who can <span className="text-primary">benefit?</span></p>} >
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-lg md:max-w-5xl mt-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 max-w-lg md:max-w-5xl mt-10">
         {cards.map((item, index) => {
           return <IconicCard key={index} title={item.title} desc={item.desc} iconName={item.iconName} />
         })}
