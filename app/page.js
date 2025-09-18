@@ -1,6 +1,7 @@
 import HeroSection from "./components/hero/HeroSection";
 import SecondHomeSection from "./components/homePage/SecondHomeSection";
 import ThirdHomeSection from "./components/homePage/ThirdHomeSection";
+import FourHomeSection from "./components/homePage/FourHomeSection";
 
 
 
@@ -11,6 +12,7 @@ export default function Home() {
         <HeroSection />
         <SecondHomeSection />
         <ThirdHomeSection />
+        <FourHomeSection />
       </div>
     </div>
   );
