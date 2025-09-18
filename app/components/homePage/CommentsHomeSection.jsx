@@ -48,7 +48,7 @@ function CommentsHomeSection() {
           <IconicRating ImageSrc={ChromeWebStore} title="4.9/5.0" description={"on Chrome Store"} starNumber={5} />
           <IconicRating ImageSrc={ProductHunt} title="4.6/5.0" description={"on Product Hunt"} starNumber={4} />
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 max-w-lg md:max-w-5xl mt-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-10 max-w-lg md:max-w-6xl mt-10">
           {comments.map((item, index) => {
             return (
               <Fragment key={index}>
