@@ -4,6 +4,7 @@ import ThirdHomeSection from "./components/homePage/ThirdHomeSection";
 import FourHomeSection from "./components/homePage/FourHomeSection";
 import CommentsHomeSection from "./components/homePage/CommentsHomeSection";
 import PricingHomeSection from "./components/homePage/PricingHomeSection";
+import FaqsHomeSection from "./components/homePage/FaqsHomeSection";
 
 
 
@@ -17,6 +18,7 @@ export default function Home() {
         <FourHomeSection />
         <CommentsHomeSection />
         <PricingHomeSection />
+        <FaqsHomeSection />
       </div>
     </div>
   );
