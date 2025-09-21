@@ -9,16 +9,22 @@ function FaqsHomeSection({ }) {
   ]
 
   return (
-    <div>
-      {faqs.map((item, index) => {
-        return (
-          <div key={index} class="collapse collapse-plus bg-base-100 border border-base-300">
-            <input type="radio" name="my-accordion-3" checked={index === 0 ? "checked" : ""} />
-            <div class="collapse-title font-semibold">{item.title}</div>
-            <div class="collapse-content text-sm">{item.content}</div>
-          </div>
-        )
-      })}
+    <div className="grid grid-cols-1 bg-orange-500 md:grid-cols-2 text-left gap-5 px-20 mb-32">
+      <div className="bg-blue-500">
+        <h1 className="font-bold text-2xl">title</h1>
+        <p className="font-light text-lg">description</p>
+      </div>
+      <div className="grid grid-cols-1 gap-3">
+        {faqs.map((item, index) => {
+          return (
+            <div className="collapse collapse-plus bg-base-100 border border-base-300">
+              <input type="radio" name="my-accordion-3" defaultChecked={index === 0} />
+              <div className="collapse-title font-semibold">{item.title}</div>
+              <div className="collapse-content text-sm">{item.content}</div>
+            </div>
+          )
+        })}
+      </div>
     </div>
   )
 }
