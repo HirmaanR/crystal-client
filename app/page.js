@@ -6,6 +6,7 @@ import CommentsHomeSection from "./components/homePage/CommentsHomeSection";
 import PricingHomeSection from "./components/homePage/PricingHomeSection";
 import FaqsHomeSection from "./components/homePage/FaqsHomeSection";
 import ShapeHomeSection from "./components/homePage/ShapeHomeCard";
+import Footer from "./components/share/navigation/HomeFooter";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <PricingHomeSection />
         <FaqsHomeSection />
         <ShapeHomeSection />
+        <Footer/>
       </div>
     </div>
   );
