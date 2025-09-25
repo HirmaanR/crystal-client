@@ -32,9 +32,9 @@ function ShapeHomeSection() {
           </p>
           <div className="card-actions justify-center">
             <ButtonMotion>
-              <button className="btn btn-lg rounded-full text-primary bg-base-100 capitalize">
+              <a className="btn btn-lg rounded-full text-primary bg-base-100 capitalize">
                 try 7-days free trial
-              </button>
+              </a>
             </ButtonMotion>
           </div>
         </div>
