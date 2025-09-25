@@ -1,6 +1,7 @@
 import backgroundImage from "@/public/ShapeCard/BackgroundImage.png";
 import backgroundImage2 from "@/public/ShapeCard/BackgroundImage2.png";
 import Image from "next/image";
+import ButtonMotion from "../motion/ButtonMotion";
 
 function ShapeHomeSection() {
   return (
@@ -30,9 +31,11 @@ function ShapeHomeSection() {
             conversations—all in one AI-powered assistant.
           </p>
           <div className="card-actions justify-center">
-            <button className="btn btn-lg rounded-full text-primary bg-base-100 capitalize">
-              try 7-days free trial
-            </button>
+            <ButtonMotion>
+              <button className="btn btn-lg rounded-full text-primary bg-base-100 capitalize">
+                try 7-days free trial
+              </button>
+            </ButtonMotion>
           </div>
         </div>
       </div>
