@@ -7,8 +7,8 @@ import InitMotion from "../motion/InitMotion";
 function ShapeHomeSection() {
   return (
     <InitMotion>
-      <div className="w-full px-30 mb-20">
-        <div className="card relative bg-primary text-center capitalize text-primary-content w-full items-center rounded-4xl overflow-hidden">
+      <div className="w-full grid justify-center items-center">
+        <div className="card relative bg-primary text-center capitalize text-primary-content rounded-none md:w-full max-w-6xl items-center lg:rounded-4xl overflow-hidden">
           {/* Background images with absolute positioning */}
           <Image
             src={backgroundImage}
@@ -24,7 +24,7 @@ function ShapeHomeSection() {
           />
 
           {/* Foreground content with higher z-index */}
-          <div className="card-body relative z-10 p-40 gap-10 max-w-5xl">
+          <div className="card-body relative z-10 p-40 gap-10 md:max-w-5xl">
             <h2 className="card-title font-extrabold text-base-100 text-5xl">
               Get Started with ChatBuddy AI Today!
             </h2>
