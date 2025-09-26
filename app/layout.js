@@ -8,20 +8,14 @@ const roboto = Roboto({
 });
 
 export const metadata = {
-  title: "Crystal",
+  title: "Crystal AI",
   description: "AI Chatbot interface",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${roboto.variable} antialiased`}
-      >
-        <MainLayout>
-          {children}
-        </MainLayout>
-      </body>
+      <body className={`${roboto.variable} antialiased`}>{children}</body>
     </html>
   );
 }
