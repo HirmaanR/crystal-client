@@ -7,21 +7,24 @@ import PricingHomeSection from "./components/homePage/PricingHomeSection";
 import FaqsHomeSection from "./components/homePage/FaqsHomeSection";
 import ShapeHomeSection from "./components/homePage/ShapeHomeCard";
 import Footer from "./components/share/navigation/HomeFooter";
+import MainLayout from "./components/layouts/MainLayout";
 
 export default function Home() {
   return (
-    <div className="grid text-center h-screen items-center justify-center font-bold uppercase">
-      <div className="grid gap-10">
-        <HeroSection />
-        <SecondHomeSection />
-        <ThirdHomeSection />
-        <FourHomeSection />
-        <CommentsHomeSection />
-        <PricingHomeSection />
-        <FaqsHomeSection />
-        <ShapeHomeSection />
-        <Footer/>
+    <MainLayout>
+      <div className="grid text-center h-screen items-center justify-center font-bold uppercase">
+        <div className="grid gap-10">
+          <HeroSection />
+          <SecondHomeSection />
+          <ThirdHomeSection />
+          <FourHomeSection />
+          <CommentsHomeSection />
+          <PricingHomeSection />
+          <FaqsHomeSection />
+          <ShapeHomeSection />
+          <Footer />
+        </div>
       </div>
-    </div>
+    </MainLayout>
   );
 }
