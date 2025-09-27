@@ -1,0 +1,1 @@
+you are a senior full-stack developer , i use daisy ui and iconify in nextjs , first read this libs and framework documentation and then make chatbot input filed like chatgpt input chat filed with my project package , can you do it ? 
