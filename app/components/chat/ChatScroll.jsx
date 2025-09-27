@@ -1,4 +1,7 @@
+import { Icon } from "@iconify/react";
 import ChatInputField from "./ChatInputField";
+import Image from "next/image";
+import bgShadow from "@/public/bgShadow.png"
 
 const ChatBubble = ({
   botImage = "https://img.daisyui.com/images/profile/demo/kenobee@192.webp",
@@ -12,16 +15,26 @@ const ChatBubble = ({
   return (
     <>
       <div className="chat chat-start gap-2">
+        <div className="h-screen w-screen z-0 fixed">
+        <Image src={bgShadow} alt="bgshadow"/>
+        </div>
         <div className="chat-image avatar">
           <div className="w-10 rounded-full">
-            <img alt="Bot avatar image" src={botImage} />
+            <Icon
+              icon="tabler:ai"
+              width="34"
+              height="34"
+              className="text-base-100 bg-primary rounded-full"
+            />
           </div>
         </div>
         <div className="chat-header">
           Crystal AI
           <time className="text-xs opacity-50">{botResTime}</time>
         </div>
-        <div className="chat-bubble max-w-lg rounded-2xl bg-base-200">{botResMessage}</div>
+        <div className="chat-bubble max-w-lg rounded-2xl bg-base-200">
+          {botResMessage}
+        </div>
       </div>
       <div className="chat chat-end gap-2">
         <div className="chat-image avatar">
@@ -33,7 +46,9 @@ const ChatBubble = ({
           {userName}
           <time className="text-xs opacity-50">{userMessageTime}</time>
         </div>
-        <div className="chat-bubble max-w-lg rounded-2xl bg-base-200">{userMessage}</div>
+        <div className="chat-bubble max-w-lg rounded-2xl bg-base-200">
+          {userMessage}
+        </div>
       </div>
     </>
   );
@@ -42,7 +57,7 @@ const ChatBubble = ({
 const ChatScroll = () => {
   const makeMessage = () => {
     let arr = [];
-    for (let i = 0; i < 50; i++) {
+    for (let i = 0; i < 10; i++) {
       arr[i] = [i];
     }
     return arr;
