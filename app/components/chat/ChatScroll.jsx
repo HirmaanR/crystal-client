@@ -4,7 +4,6 @@ import Image from "next/image";
 import bgShadow from "@/public/bgShadow.png"
 
 const ChatBubble = ({
-  botImage = "https://img.daisyui.com/images/profile/demo/kenobee@192.webp",
   botResTime = "12:45",
   botResMessage = "The question of whether androids dream of electric sheep is the title and central theme of the science fiction novel  Do Androids Dream of Electric Sheep? by Philip K. Dick.",
   userImage = "https://img.daisyui.com/images/profile/demo/anakeen@192.webp",
